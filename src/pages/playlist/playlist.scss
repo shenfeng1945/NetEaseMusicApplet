@@ -1,0 +1,121 @@
+.playListPages {
+  > .art-head {
+    position: relative;
+    padding-bottom: 67.8%;
+    overflow: hidden;
+    z-index: 1;
+    > .art-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+      height: 100%;
+    }
+    > .name {
+      position: absolute;
+      bottom: 2.1875vw;
+      font-size: 5.3125vw;
+      color: red;
+      left: 4.6875vw;
+    }
+  }
+
+  > .summary {
+    padding: 3.125vw 4.6875vw 0;
+    position: relative;
+    > .ellipsis {
+      font-size: 4.375vw;
+      color: #666;
+    }
+    > .unfold-icon {
+      position: absolute;
+      right: 5%;
+      bottom: -4.6875vw;
+      width: 4.6875vw;
+      height: 4.6875vw;
+      fill: #bfbfc0;
+    }
+  }
+
+  > .hot-songs {
+    margin-top: 5.625vw;
+    margin-bottom: 20.625vw;
+    > .hot-song-sum {
+      font-size: 3.75vw;
+      background: #eeeff0;
+      padding: 0 3.125vw;
+      color: #666;
+      line-height: 7.1875vw;
+    }
+    .hot-song-switch {
+      display: flex;
+      align-items: center;
+      > .number {
+        line-height: 17.1875vw;
+        width: 12.5vw;
+        font-size: 4.54vw;
+        color: #999;
+        text-align: center;
+      }
+      > .list-play-wrap {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        position: relative;
+        padding: 2.5vw 0;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 200%;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          transform: scale(0.5);
+          transform-origin: 0 0;
+        }
+        > .list-item {
+          flex-grow: 1;
+          > .song-title {
+            font-size: 4.54vw;
+            color: #333;
+          }
+          > .singer {
+            font-size: 3.21vw;
+            color: #888;
+          }
+        }
+        > .play {
+            padding:0 3.125vw;
+        }
+      }
+    }
+  }
+
+  > .bottom-bar {
+    padding: 2.1875vw 0;
+    /*text-align:center;*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    background: white;
+    > .download-wrap {
+      display: flex;
+      justify-content: center;
+      > .download1 {
+        color: white;
+        background: #d43b32;
+        display: flex;
+        line-height: 9.375vw;
+        padding: 1.5625vw 21.875vw;
+        border-radius: 12.5vw;
+        align-items: center;
+        justify-content: center;
+        width: 38vw;
+      }
+    }
+  }
+}
