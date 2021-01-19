@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { View, Button, Text, Image, Navigator } from '@tarojs/components'
 import IconFont from '../../iconfont';
-import Recommned from '../recommend/recommend';
-import HotMusic from '../hot/hot';
-import SearchMusic from '../search/search';
+import Recommned from './recommend/recommend';
+import HotMusic from './hot/hot';
+import SearchMusic from './search/search';
 
 import { add, minus, asyncAdd } from '../../actions/counter'
 

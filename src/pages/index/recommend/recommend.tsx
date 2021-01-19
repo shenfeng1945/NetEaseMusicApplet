@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, Image, Navigator } from "@tarojs/components";
-import IconFont from "../../iconfont";
+import IconFont from "../../../iconfont";
 import "./recommend.scss";
 
 class Recommend extends Component {
