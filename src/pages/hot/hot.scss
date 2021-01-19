@@ -1,0 +1,61 @@
+.noCollapse::before {
+  content: "";
+  display: table;
+}
+.tabs-content2 {
+  > .hot-banner {
+    background: transparent
+      url("http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee")
+      no-repeat center;
+    padding-left: 6.25vw;
+    /*padding-top:.1px;*/
+    padding-bottom: 5vw;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 0;
+    }
+    > .hot-notice {
+      background: url("https://i.loli.net/2017/08/22/599c513e4c3f0.png")
+        no-repeat -7.5vw -9.375vw;
+      width: 44.375vw;
+      height: 20.9375vw;
+      background-size: 51.875vw 30.3125vw;
+      margin-top: 4.6875vw;
+      position: relative;
+      z-index: 1;
+    }
+    > .date {
+      font-size: 3.75vw;
+      margin-top: 3.125vw;
+      color: rgba(255, 255, 255, 0.8);
+      transform: scale(0.91);
+      transform-origin: 0 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  > .whole-list {
+    color: #999;
+    font-size: 4.375vw;
+    text-align: center;
+    background: #fcfcfd;
+    .list-url{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .list-span {
+      line-height: 17.1875vw;
+      padding-right: 0.9375vw;
+    }
+  }
+}

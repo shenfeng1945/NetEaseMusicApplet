@@ -1,0 +1,58 @@
+.tabs-content3 {
+  > .search-wrap {
+    padding: 4.6875vw 3.125vw;
+    position: relative;
+    box-sizing: border-box;
+    > .search {
+    box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 9.375vw;
+      background: #ebecec;
+      > .search-icon {
+        display: block;
+        width: 4.0625vw;
+        height: 4.0625vw;
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjYzljOWNhIiBkPSJNMjUuMTgxLDIzLjUzNWwtMS40MTQsMS40MTRsLTcuMzE1LTcuMzE0CgkJQzE0LjcwOSwxOS4xMDcsMTIuNDYsMjAsMTAsMjBDNC40NzcsMjAsMCwxNS41MjMsMCwxMEMwLDQuNDc3LDQuNDc3LDAsMTAsMGM1LjUyMywwLDEwLDQuNDc3LDEwLDEwYzAsMi4zNDItMC44MTEsNC40OS0yLjE2LDYuMTk1CgkJTDI1LjE4MSwyMy41MzV6IE0xMCwyYy00LjQxOCwwLTgsMy41ODItOCw4czMuNTgyLDgsOCw4YzQuNDE4LDAsOC0zLjU4Miw4LThTMTQuNDE4LDIsMTAsMnoiLz48L3N2Zz4=");
+        margin: 0 2.5vw;
+      }
+      > .output {
+        font-size: 4.375vw;
+        background: #ebecec;
+        color: #333;
+        line-height: 8.125vw;
+        flex-grow: 1;
+        &::-webkit-input-placeholder {
+          color: #c9c9c9;
+        }
+      }
+      > .half-circle {
+        width: 9.375vw;
+        height: 9.375vw;
+      }
+    }
+  }
+
+  > .hot-search {
+    padding: 3.75vw 3.125vw 0;
+    &.clear {
+      display: none;
+    }
+    > .search-title {
+      font-size: 3.75vw;
+      margin-bottom: 2.8125vw;
+    }
+    > .hot-search-lists {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  > .searchAll .h3 {
+    position: relative;
+    font-size: 4.6875vw;
+    color: #507daf;
+    line-height: 15.625vw;
+  }
+}
