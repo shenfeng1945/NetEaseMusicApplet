@@ -4,7 +4,7 @@
   "description": "网易云音乐",
   "appid": "wxdf59da299ec3c39e",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": false,
     "enhance": false,
     "postcss": false,
