@@ -2,9 +2,32 @@ import React, { Component } from "react";
 import { View, Text, Image, Navigator } from "@tarojs/components";
 import IconFont from "../../../iconfont";
 import "./recommend.scss";
+import SongLists from "../songlist/songlist";
+import AV from "leancloud-storage/dist/av-weapp.js";
+    
+    
 
-class Recommend extends Component {
-   
+class Recommend extends Component<any, any> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      songlists: [],
+    };
+  }
+  componentDidMount() {
+      this.getNewSongs();
+  }
+  getNewSongs = () => {
+    const query = new AV.Query("Song");
+    query.equalTo('newmusic', true);
+    query.find().then((data) => {
+      let results: any = [];
+      data.forEach((item, i) => {
+        results[i] = {...item.attributes, songId: item.id};
+      });
+      this.setState({ songlists: results });
+    });
+  };
   render() {
     return (
       <View>
@@ -12,7 +35,7 @@ class Recommend extends Component {
           <View className="sectionTitle">推荐歌单</View>
           <View className="lists">
             <View className="item">
-              <Navigator url="#">
+              <Navigator url="/pages/playlist/playlist">
                 <Image
                   src="//i.loli.net/2017/08/30/59a6240319f3b.jpg"
                   className="music-img"
@@ -98,19 +121,18 @@ class Recommend extends Component {
                 </View>
               </Navigator>
             </View> */}
-            
           </View>
         </View>
 
         <View className="new-music">
           <View className="sectionTitle">最新音乐</View>
-          <View className="loading">
+          {/* <View className="loading">
             <Image
               className="loading-img"
               src="//i.loli.net/2017/08/24/599eabe9caa83.gif"
             />
-          </View>
-          <View className="new-lists"></View>
+          </View> */}
+          <SongLists songLists={this.state.songlists}></SongLists>
         </View>
 
         <View className="footer">
