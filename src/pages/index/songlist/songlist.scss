@@ -1,0 +1,51 @@
+.song-lists {
+  > .hot-song-item {
+    > .hot-song-switch {
+      display: flex;
+      align-items: center;
+
+      > .number {
+        line-height: 17.1875vw;
+        width: 12.5vw;
+        font-size: 4.54vw;
+        color: #999;
+        text-align: center;
+      }
+      > .list-play-wrap {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        position: relative;
+        padding: 2.5vw 0;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 200%;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          transform: scale(0.5);
+          transform-origin: 0 0;
+        }
+        > .list-item {
+          flex-grow: 1;
+          > .song-title {
+            font-size: 4.54vw;
+            color: #333;
+          }
+          > .singer {
+            font-size: 3.21vw;
+            color: #888;
+            display: flex;
+            align-items: center;
+          }
+        }
+        > .play {
+          padding: 0 3.125vw;
+        }
+      }
+    }
+  }
+}
