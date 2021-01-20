@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { View, Text, Image, Navigator, Input } from "@tarojs/components";
 import IconFont from "../../iconfont";
 import "./playlist.scss";
+import SongLists from '../index/songlist/songlist';
 
 class PlaylistPage extends Component {
   render() {
@@ -27,27 +28,7 @@ class PlaylistPage extends Component {
 
         <View className="hot-songs">
           <View className="hot-song-sum">热门单曲xxx首</View>
-          <View className="hot-song-lists">
-          
-            <View className="hot-song-item">
-              <Navigator url="/pages/song/song" className="hot-song-switch">
-                <View className="number">1</View>
-                <View className="list-play-wrap">
-                  <View className="list-item">
-                    <View className="song-title">告白气球</View>
-                    <View className="singer">周杰伦 - 周杰伦的床边故事</View>
-                  </View>
-                  <View className="play">
-                    <IconFont name="play" size={52}/>
-                  </View>
-                </View>
-              </Navigator>
-            </View>
-            
-
-
-
-          </View>
+          {/* <SongLists isOrder={true}/> */}
         </View>
 
         <View className="bottom-bar">
