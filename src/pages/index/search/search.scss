@@ -4,7 +4,7 @@
     position: relative;
     box-sizing: border-box;
     > .search {
-    box-sizing: border-box;
+      box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -46,13 +46,42 @@
     > .hot-search-lists {
       display: flex;
       flex-wrap: wrap;
+      > .hot-search-item {
+        font-size: 4.375vw;
+        position: relative;
+        margin-right: 2.5vw;
+        margin-bottom: 2.5vw;
+        /*padding: 5px 14px;*/
+        line-height: 6.875vw;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10.625vw;
+        > .skip-url {
+          display: block;
+          padding: 1.5625vw 4.375vw;
+        }
+      }
     }
   }
 
-  > .searchAll .h3 {
-    position: relative;
-    font-size: 4.6875vw;
-    color: #507daf;
-    line-height: 15.625vw;
+  > .searchAll {
+    padding-left: 3.125vw;
+    > .search-title {
+      position: relative;
+      font-size: 4.6875vw;
+      color: #507daf;
+      line-height: 15.625vw;
+    }
+    > .search-result {
+        > .search-item{
+            line-height: 14.0625vw;
+            > .skip-url{
+                display: flex;
+                align-items: center;
+                > Text{
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
   }
 }
