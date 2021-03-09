@@ -16,7 +16,7 @@ class App extends Component {
     AV.init({
       appId: APP_ID,
       appKey: APP_KEY,
-      serverURLs: "https://netease.shenfeng1945.cn",
+      serverURLs: "https://netease-lc.shenfeng1945.cn",
     });
   }
 
